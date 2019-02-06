@@ -109,5 +109,9 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
 
     <allow-navigation href="*" />
+    
+    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location for tracking</string>
+    </edit-config>
 
 </widget>
